@@ -1,0 +1,8 @@
+import cv2
+image1 = cv2.imread('image1.jpg')
+image2 = cv2.imread('image2.jpg')
+crop = image1[50:150, 100:200]
+image2[0:100, 0:100] = crop
+cv2.imshow('Pasted Image', image2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
